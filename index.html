@@ -1,12 +1,33 @@
 <!DOCTYPE HTML>
-      <html>
+<html>
+
 <head>
 
-                     <meta charset="utf-8">
-      <title>Hellor, World!</title>
-             </head>
+  <meta charset="utf-8">
+  <style>
+    .green {
+      color: green;
+      animation: flash 0.25s infinite;
+    }
+
+    @keyframes flash {
+      from {
+        color: green;
+      }
+      to {
+        color: red;
+      }
+    }
+  </style>
+  <title>Hello, World!</title>
+</head>
+
 <body>
 
-                     Hellawr, World!
-             </body>
+  <p>I miss the<span class="green"> Green Bean</span>! :(((( </p>
+  <img src="data:image/png;base64,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" />
+
+  <p><a href="https://www.oxy.edu/student-life/campus-dining/where-eat/green-bean">Read this</a></p> 
+  </body>
+
 </html>
